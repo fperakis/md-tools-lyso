@@ -19,31 +19,43 @@ $ symexp sym, 1aki, 1aki, 31 (41 proteins - selected 32)
 ## PIPELINE
 
 ### LOAD GROMACS 2019
+
+```bash 
 $ ml GCC/8.3.0  CUDA/10.1.243  OpenMPI/3.1.4
 
 $ ml GROMACS/2019.4-PLUMED-2.5.4
 
 $ cd scripts
+```
 
 ### EQUILIBRATION (uses pipeline.sh)
+```bash 
 $ sh loop_em.sh
+```
 
 ### NVT
+```bash 
 $ sh loop_nvt.sh
 
 $ sh ../analysis/nvt_analysis.sh
+```
 
 ### NPT
+```bash 
 $ sh loop_npt.sh
 
 $ sh ../analysis/npt_analysis.sh
-
-### MD 
+```
+### MD
+```bash 
 $ sh loop_md.sh
 
 $ sh md_analysis.sh
+```
 
 ### MD multiple Temperatures
+```bash 
 $ sh loop_mdT.sh
 
 $ sh mdT_analysis.sh
+```
