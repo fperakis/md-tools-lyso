@@ -13,7 +13,11 @@ This is a collection of tools for running GROMACS simulations on HPC2N (Kebnekai
 
 Here is used a protein crystal.pdb from 1kaki.pdb which is maded using pymol:
 
-$ symexp sym, 1aki, 1aki, 31 (41 proteins - selected 32)
+```bash 
+$ symexp sym, 1aki, 1aki, 31
+```
+
+this cut-off yields 41 proteins, where 32 were selected 
 
 ------------
 ## PIPELINE
