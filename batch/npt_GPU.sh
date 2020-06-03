@@ -2,7 +2,7 @@
 
 #SBATCH -A SNIC2020-5-289
 # Name of the job
-#SBATCH -J dode
+#SBATCH -J NPT-GPU
 #SBATCH -t 2-12:00:00
 #SBATCH -n 32
 # Asking for 2 K80 GPU cards per node
