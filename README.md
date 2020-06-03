@@ -50,12 +50,12 @@ $ sh ../analysis/npt_analysis.sh
 ```bash 
 $ sh loop_md.sh
 
-$ sh md_analysis.sh
+$ sh ../analysis/md_analysis.sh
 ```
 
 ### MD multiple Temperatures
 ```bash 
 $ sh loop_mdT.sh
 
-$ sh mdT_analysis.sh
+$ sh ../analysis/mdT_analysis.sh
 ```
