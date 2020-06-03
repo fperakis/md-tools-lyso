@@ -5,7 +5,7 @@ ml GCC/8.3.0  CUDA/10.1.243  OpenMPI/3.1.4
 ml GROMACS/2019.4-PLUMED-2.5.4
 
 # remove waters from pdb
-grep -v HOH ../../src/crystal.pdb > crystal_clean.pdb
+grep -v HOH ../../src/crystal_32.pdb > crystal_clean.pdb
 
 # add hydrogens, make topology
 gmx pdb2gmx -f crystal_clean.pdb -o crystal_processed.gro -water tip4p <<EOF
