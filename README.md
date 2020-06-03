@@ -31,12 +31,12 @@ $ sh loop_em.sh
 ### NVT
 $ sh loop_nvt.sh
 
-$ sh nvt_analysis.sh
+$ sh ../analysis/nvt_analysis.sh
 
 ### NPT
 $ sh loop_npt.sh
 
-$ sh npt_analysis.sh
+$ sh ../analysis/npt_analysis.sh
 
 ### MD 
 $ sh loop_md.sh
