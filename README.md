@@ -1,6 +1,8 @@
-This is a collection of tools for running GROMACS simulations on HPC2N (Kebnekaisa)
+## MD-TOOLS
 
-PROJECT NUMBERS:
+This is a collection of tools for running GROMACS simulations on HPC2N (Kebnekaise)
+
+### PROJECT NUMBERS:
 
 SNIC 2020/5-289 - medium alocation (90'000 CPU h/month)
 SNIC 2020/9-36  - small alocation  (5'000  CPU h/month)
