@@ -8,6 +8,6 @@ do
   gmx trjconv -s md.tpr -f md.xtc -o md_noMW.xtc -n md_noMW.ndx -pbc mol -ur compact -center
   gmx energy -f md.edr -o md_volume.xvg < ../../src/c20.txt
   gmx energy -f md.edr -o md_potential.xvg < ../../src/c10.txt
-  gmx saxs -f md.xtc -s md.gro -n md_noMW.ndx -sq saxs_md.xvg -energy 8.04
+  sh ../../batch/saxs_CPU.sh
   cd ..
 done
