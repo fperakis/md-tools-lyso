@@ -5,10 +5,10 @@ nsteps                  = 50000000  ; 2 * 50 000 000 = 100 ns
 dt                      = 0.002     ; 2 fs
 nstcomm                 =  1        ; frequency for center of mass motion removal
 ; Output control
-nstxout                 = 500       ; save coordinates every 1 ps
-nstvout                 = 500       ; save velocities every 1 ps
-nstenergy               = 500       ; save energies every 1 ps
-nstlog                  = 500       ; update log file every 1 ps
+nstxout                 = 500000    ; save coordinates every 1 ns
+nstvout                 = 500000    ; save velocities every 1 ns
+nstenergy               = 500000    ; save energies every 1 ns
+nstlog                  = 500000    ; update log file every 1 ns
 ; Bond parameters
 continuation            = yes       ; Restarting after NVT 
 constraint_algorithm    = lincs     ; holonomic constraints 
