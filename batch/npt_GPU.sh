@@ -12,7 +12,6 @@
 ml purge > /dev/null 2>&1
 
 # Load the module for GROMACS and its prerequisites.
-# This is for GROMACS/2016.4 with no GPU support
 ml GCC/8.3.0  CUDA/10.1.243  OpenMPI/3.1.4
 ml GROMACS/2019.4-PLUMED-2.5.4
 
