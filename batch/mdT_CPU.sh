@@ -32,4 +32,4 @@ fi
 # to avoid complaints from GROMACS
 export OMP_NUM_THREADS=$ntomp
 
-$MPIRUN $GMX mdrun $ntmpi -ntomp $ntomp -deffnm md
+$MPIRUN $GMX mdrun $ntmpi -ntomp $ntomp -deffnm md_300
