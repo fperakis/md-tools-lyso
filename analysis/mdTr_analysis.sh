@@ -27,7 +27,7 @@ EOF
 cp ../../batch/saxs_r.sh saxs/saxs_${T}.sh
 sed -i "s/300/$T/g" saxs/saxs_${T}.sh
 # submit job
-sbatch saxs_${T}.sh
+sbatch saxs/saxs_${T}.sh
 
 done
 cd ..
