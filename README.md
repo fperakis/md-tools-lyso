@@ -1,12 +1,6 @@
-# MD-TOOLS
+# MD-TOOLS-LYSO
 
 This is a collection of tools for running GROMACS simulations on HPC2N (Kebnekaise)
-
-## PROJECT NUMBERS:
-
-* SNIC 2020/5-289 - medium alocation (90'000 CPU h/month)
-
-* SNIC 2020/9-36  - small alocation  (5'000  CPU h/month)
 
 -----
 ## PDB file:
@@ -34,32 +28,32 @@ $ cd scripts
 
 ### EQUILIBRATION (uses pipeline.sh)
 ```bash 
-$ sh loop_em.sh
+$ bash loop_em.sh
 ```
 
 ### NVT
 ```bash 
-$ sh loop_nvt.sh
+$ bash loop_nvt.sh
 
-$ sh ../analysis/nvt_analysis.sh
+$ bash ../analysis/nvt_analysis.sh
 ```
 
 ### NPT
 ```bash 
-$ sh loop_npt.sh
+$ bash loop_npt.sh
 
-$ sh ../analysis/npt_analysis.sh
+$ bash ../analysis/npt_analysis.sh
 ```
 ### MD
 ```bash 
-$ sh loop_md.sh
+$ bash loop_md.sh
 
-$ sh ../analysis/md_analysis.sh
+$ bash ../analysis/md_analysis.sh
 ```
 
 ### MD multiple Temperatures
 ```bash 
-$ sh loop_mdT.sh
+$ bash loop_mdT.sh
 
-$ sh ../analysis/mdT_analysis.sh
+$ bash ../analysis/mdT_analysis.sh
 ```
