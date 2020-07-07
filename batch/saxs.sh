@@ -19,7 +19,7 @@ N=100 # number of points in the golden spiral
 t=10000 # time point (ps)
 
 # dump a single frame
-gmx trjconv -f md_300.xtc -s md_300.tpr -dump ${t} -o saxs/md_300_${t}.pdb -n md_noMW_300.ndx -pbc mol<< EOF
+gmx trjconv -f md_300.xtc -s md_300.tpr -dump ${t} -o saxs/md_300_${t}.pdb -n md_noMW_300.ndx -pbc atom -center << EOF
 0
 EOF
 
@@ -40,8 +40,8 @@ acos=`perl -E 'use Math::Trig; say acos($ENV{d})'`
 theta=$(echo "scale=8; $acos*180/$pi"| bc )
 
 # rotate structure (first along theta, then along phi)
-gmx editconf -f saxs/md_300_${t}_noH.pdb -o saxs/md_300_${j}_${t}.gro -rotate ${theta} 0 0 
-gmx editconf -f saxs/md_300_${j}_${t}.gro -o saxs/md_300_${j}_${t}.pdb -rotate 0 ${phi} 0
+gmx editconf -f saxs/md_300_${t}_noH.pdb -o saxs/md_300_${j}_${t}.gro -rotate ${theta} 0 0 -center 0 0 0
+gmx editconf -f saxs/md_300_${j}_${t}.gro -o saxs/md_300_${j}_${t}.pdb -rotate 0 ${phi} 0 -center 0 0 0
 
 # calculate total saxs
 gmx saxs -f saxs/md_300_${j}_${t}.pdb -s saxs/md_300_${j}_${t}.pdb -sq saxs/saxs_300_${j}_${t}.xvg -energy 8.041 << EOF
