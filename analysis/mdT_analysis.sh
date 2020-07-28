@@ -13,13 +13,18 @@ do
 gmx select -s md_${T}.gro -f md_${T}.xtc -on md_noMW_${T}.ndx -xvg none -select "all and not name MW"
 
 # extract volume
-gmx energy -f nvt.edr -o nvt_volume.xvg << EOF
+gmx energy -f md_${T}.edr -o md_${T}_volume.xvg << EOF
 20
 EOF
 
 # extract potential 
-gmx energy -f nvt.edr -o nvt_potential.xvg << EOF
+gmx energy -f md_${T}.edr -o md_${T}_potential.xvg << EOF
 10
+EOF
+
+# extract temperature 
+gmx energy -f md_${T}.edr -o md_${T}_temperature.xvg << EOF
+15
 EOF
 
 done

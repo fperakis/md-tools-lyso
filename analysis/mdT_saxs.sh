@@ -2,7 +2,7 @@
 cd ../data/
 
 # loop over realisations
-for R in $(seq 1 1 1)
+for R in $(seq 0 1 9)
 do 
 cd R${R}
 mkdir saxs
@@ -21,7 +21,7 @@ sed -i "s/300/$T/g" saxs/saxs_${T}_${t}.sh
 sed -i "s/10000/$t/g" saxs/saxs_${T}_${t}.sh
 
 # submit jobs
-sbatch saxs_${T}_${t}.sh
+sbatch saxs/saxs_${T}_${t}.sh
 
 done # time loop
 done # temperature loop
