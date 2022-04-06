@@ -5,7 +5,7 @@ This is a collection of tools for running GROMACS simulations on HPC2N (Kebnekai
 -----
 ## PDB file:
 
-Here is used a protein crystal.pdb from 1kaki.pdb which is maded using pymol:
+Here is used a protein crystal.pdb from 1aki.pdb which is maded using pymol:
 
 ```bash 
 $ symexp sym, 1aki, 1aki, 31
